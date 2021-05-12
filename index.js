@@ -15,6 +15,9 @@ class Formatter {
       if(words[n]!=="the" && words[n]!=="an"&& words[n]!=="but" && words[n]!=="of" && words[n]!=="for"&& words[n]!=="at"&& words[n]!=="by"&& words[n]!=="from"&& words[n]!=="and" && words[n]!=="a"){
         words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
       }
+      if(words[0]==="a"){
+        words[0] = words[0].charAt(0).toUpperCase() + words[n].slice(1);
+      }
     }
     return words.join(' ');
   }
