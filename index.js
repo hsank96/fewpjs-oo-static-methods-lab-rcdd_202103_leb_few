@@ -12,7 +12,7 @@ class Formatter {
   static titleize(string) {
     let words = string.split(' ');
     for (let n = 0; n < words.length; n++) {
-      if(words[n]!=="the" && words[n]!=="a"&& words[n]!=="an"&& words[n]!=="but" && words[n]!=="of" && words[n]!=="for"&& words[n]!=="at"&& words[n]!=="by"&& words[n]!=="from" ){
+      if(words[n]!=="the" && words[n]!=="a"&& words[n]!=="an"&& words[n]!=="but" && words[n]!=="of" && words[n]!=="for"&& words[n]!=="at"&& words[n]!=="by"&& words[n]!=="from"&& words[n]!=="and" ){
         words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
       }
     }
